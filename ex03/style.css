@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(223, 220, 189, 0.63);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+main{
+    background-color: lightpink;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    color:darkmagenta;
+    background-color:rgba(175, 126, 169, 0.527);
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: center;
+    color:darkmagenta;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-size: 1em;
+    text-align: justify;
+}
+ul{
+    text-align: start;
+}
+form{
+    text-align: center;
+}
