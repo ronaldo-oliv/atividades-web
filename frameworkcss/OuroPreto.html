@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Mariana</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Carrossel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://instagram.com/oliveira_photographer?igshid=ZDdkNTZiNTM=">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Desativado</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagem/Turismo-em-Minas-Gerais-melhor-epoca1400px.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Bem Vindo a Minas Gerais.</h1>
+            <p>Conheça e se encante!</p>
+            <p><a class="btn btn-lg btn-primary" href="Cadastro.html">Inscreva-se hoje</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/IMG_8879a-e1482170408169tttt2042x931.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Cidades históricas</h1>
+            <p>Conheça e se encante!</p>
+            <p><a class="btn btn-lg btn-primary" href="https://youtu.be/_eDLHvQoL-8">Veja</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/DEST_Tiradentes_GettyImages-963500142_1440X572.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Aprecie.</h1>
+            <p>Conheça e se encante!</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.vortexmag.net/pt-br/as-10-cidades-mais-bonitas-de-minas-gerais/">mais roteiros</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container marketing">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="imagem/diamantina140x140.jpg" alt="">
+        <h2 class="fw-normal">Diamantina</h2>
+        <p>Clique e conheça um pouco mais sobre a cidade histórica de Diamantina.</p>
+        <p><a class="btn btn-secondary" href="Diamantina.html">Explore &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="imagem/praca-minas-gerais140x140.jpg" alt="">
+        <h2 class="fw-normal">Mariana</h2>
+        <p>Clique e conheça um pouco mais sobre a cidade histórica de Mariana.</p>
+        <p><a class="btn btn-secondary" href="Mariana.html">Explore &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="imagem/Praça-Tiradentes-140x140OuroP.jpg" alt="">
+        <h2 class="fw-normal">Ouro Preto</h2>
+        <p>Clique e conheça um pouco mais sobre a cidade histórica de Ouro Preto.</p>
+        <p><a class="btn btn-secondary" href="OuroPreto.html">Explore &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+    <h1>Ouro Preto MG</h1>
+    <div class="col-md-5">
+        <img src="imagem/p-esp-ouro7.370x250.jpg" class="img-fluid" alt="...">
+    </div>
+    <h2>ORIGENS</h2>
+
+        <p>A origem de Ouro Preto está no arraial do Padre Faria, fundado pelo bandeirante Antônio Dias de Oliveira, pelo Padre João de Faria Fialho e pelo Coronel Tomás Lopes de Camargo e um irmão deste, por volta de 1698.</p>
+        
+        <p>Pela junção desses vários arraiais, tornando-se sede de conselho, foi elevada à categoria de vila em 1711 com o nome de Vila Rica. Em 1720 foi escolhida para capital da nova capitania de Minas Gerais. Em 1823, após a Independência do Brasil, Vila Rica recebeu o título de Imperial Cidade, conferido por D. Pedro I do Brasil, tornando-se oficialmente capital da então província das Minas Gerais e passando a ser designada como Imperial Cidade de Ouro Preto. Em 1839 foi criada a Escola de Farmácia e em 1876 a Escola de Minas. Foi sede do movimento revolucionário conhecido como Inconfidência Mineira. Foi a capital da província e mais tarde do estado, até 1897. A antiga capital de Minas conservou grande parte de seus monumentos coloniais e em 1933 foi elevada a Patrimônio Nacional, sendo, cinco anos depois, tombada pela instituição que hoje é o IPHAN. Em 5 de setembro de 1980, na quarta sessão do Comitê do Patrimônio Mundial da UNESCO, realizada em Paris, Ouro Preto foi declarada Patrimônio Cultural da Humanidade.</p>
+        
+        <p>Nenhum outro município brasileiro acumulou tantos fatos históricos relevantes à construção da memória nacional como este vasto município. Destacam-se, como marcos importantes da história brasileira:</p>
+        
+        <p>- Última década do século XVII e princípio do XVIII - clímax das explorações paulistas, sendo descoberto o "ouro preto";
+        - 1708 - Guerra dos Emboabas; os atritos entre paulistas e 'forasteiros' atinge o ponto alto no distrito de Cachoeira do Campo;
+        - 1720 – Revolta liderada por Filipe dos Santos; motins contra o Quinto da Coroa Portuguesa;
+        - 1789 - Inconfidência Mineira; confabulação entre determinados segmentos da sociedade mineradora de então para tornar Minas livre do jugo português.</p>
+        
+        <p>Em 1897 Ouro Preto perde o status de capital mineira, especialmente por não apresentar alternativas viáveis ao desenvolvimento físico urbano, sendo a sede transferida para o antigo Curral Del’Rey (onde uma nova cidade, Belo Horizonte, planejada e espaçosa, estava sendo preparada). A vetusta cidade continuou polarizando seus distritos, sendo contudo, o município somente a sombra do que foi outrora o Termo de Vila Rica. Em 1923, pela Lei N° 843 de 7 de setembro, emancipa-se a antiga Itabira do Campo, atual Itabirito e em 1953 cria-se o município de Ouro Branco, desmembrado do de Ouro Preto pela Lei N°1039, de 12 de dezembro.</p>
+        
+        <p>Atualmente são os seguintes os distritos de Ouro Preto:</p>
+        
+        <p>Cachoeira do Campo, Amarantina, Glaura (Casa Branca), São Bartolomeu, Santo Antônio do Leite, Rodrigo Silva, Miguel Burnier, Engenheiro Correia, Santa Rita, Santo Antônio do Salto, Antônio Pereira e Lavras Novas.</p>
+        
+        <p>Destes, os que têm origem colonial são: Cachoeira do Campo, São Bartolomeu, Glaura (Casa Branca), Amarantina, Antônio Pereira, Lavras Novas. Tomaram vulto no século XIX pela atividade comercial: Santa Rita de Ouro Preto, Santo Antônio do Salto, Santo Antônio de Leite (apesar dos três também terem cerne no século XVIII, só tomaram impulso no XIX). Desenvolveram-se no século XIX em conseqüência da presença da ferrovia (com marcante presença de arquitetura ferroviária): Rodrigo Silva, Miguel Burnier, Engenheiro Corrêa.</p>
+        
+        <h3>EVOLUÇÃO URBANA E HISTÓRICA DA SEDE</h3>
+        <p>Situado em terreno extremamente montanhoso e acidentado, somente a febre aurífera escolheria este rincão como palco de uma cidade. A relação ocupação humana X relevo e geografia proporcionou a Ouro Preto algumas especificidades históricas curiosas. A evolução histórico-urbana dos núcleos de povoamento pode, desta maneira, ser estudada por dois vieses: a ocupação gradual de determinadas áreas, segundo o relevo, e a formação de caminhos-eixo que condicionariam a feição atual da cidade.</p>
+        
+        <p>O primeiro foco de interesse - e o que mais óbvio nos parece - diz respeito, justamente, à ocupação dos morros e encostas. Aportados aqui os primeiros exploradores - dos quais Antônio Dias e Padre João de Faria Fialho parecem ser os mais importantes, emprestando seus nomes ainda à toponímia local - a ocupação deu-se de duas formas: nas margens dos ribeiros, onde o ouro abundava, e nos morros que circundam a cidade, repletos de minas e sarilhos. Nos primeiros tempos tomaram vulto os arraiais que ocuparam as íngremes encostas. Dominados por pequenas e pitorescas capelas e por extensas áreas mineradoras, estes arraiais fizeram o fausto de vários aventureiros, alguns erigidos em verdadeiros potentados locais (neste pormenor destaca-se Pascoal da Silva Guimarães, dono das minas do Ouro Podre, incendiadas a mando do Conde de Assumar em 1720). Estes vários núcleos, de ocupação muito antiga , teriam logo seu brilho ofuscado por outros, nascidos às margens dos ribeiros, nos fundos dos vales que sulcam a cidade.</p>
+        
+        <p>Dois arraiais se distinguiram fora das montanhas: o Arraial de Nossa Senhora do Pilar e o Arraial de Nossa Senhora da Conceição de Antônio Dias. Suas duas capelas, situadas nas proximidades de córregos auríferos, tiveram atuação preponderante na evolução urbana do núcleo maior que então se desenhava. Tanto isto é veraz que em 1711, com a criação da Vila Rica, os dois núcleos foram eixo de discussão, e em 1724, com a instituição das primeiras freguesias coletivas das Minas Gerais, Pilar e Antônio Dias tiveram seus templos elevados à categoria de igrejas paroquiais. Pouco tardou e as antigas matrizes foram postas em reconstrução vultosa. As diversas irmandades que concorreriam no todo das obras são de fundamental importância para se entender a sociedade ouro-pretana do século XVIII, síntese que é de toda sociedade colonial mineira. Várias destas irmandades se encarregaram, posteriormente, da construção de novos templos, mais condizentes com a realidade dos confrades. Juntamente com a arquitetura civil, esta arquitetura de caráter religioso, marco indelével da paisagem.</p>
+        
+        <p>O Pilar tem sua Mercês, Rosário e sua igreja de Ordem Terceira, o Carmo. Antônio Dias tem também sua Mercês e Rosário (Santa Efigênia) e também sua representante de Ordem Terceira, São Francisco de Assis. Não é coincidência que as duas Ordens Terceiras, rivais, se encontrem já à beira do topo do Morro de Santa Quitéria. Naquele momento se delineava de vez a conformação urbana da velha capital: a Casa de Câmara e Cadeia estava em construção e o Palácio dos Governadores já estava em uso. O Morro de Santa Quitéria teve seu cimo terraplanado. A Praça, atualmente chamada Tiradentes, se tornava o ponto central e o clímax físico evolutivo do período aurífero.</p>
+        
+        <p>Assim percebemos a evolução desta cidade, curiosa e irrequieta: das capelinhas das montanhas circundantes aos fundos dos vales, dos fundos dos vales novamente ao cimo das montanhas. Este sobe/desce dos morros, alem de transportar técnicas e gentes, se reinventou nos estilos: do barroco simplório das capelinhas antigas, ao fausto barroco das matrizes; do barroco paroquial, soberbo e taciturno, à elegância da curvilínea rococó de São Francisco e Carmo. E na Praça, ponto convergente? A fachada da Casa de Câmara e Cadeia aspira ares neoclássicos, enquanto o Palácio, mais antigo, herda sua planta das antigas fortalezas lusas. Isto sem falar dos ecletismos que em tempos posteriores pontuariam as ruas e vielas de outras influências. Quanta herança histórica e arquitetônica numa cidade que, longe de ser una e homogênea, trás no seu próprio cerne a marca da heterodoxia e da mistura!</p>
+        
+        <h4>Texto e Pesquisa: Alex Bohrer</h4>
+        <h5>Lugares para se hospedar</h5>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Quartos</th>
+                <th scope="col">Preço/diaria</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Café da manhã</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>200</td>
+                <td>Tiradentes</td>
+                <td>Sim</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>350</td>
+                <td>Milho Verde</td>
+                <td>Não</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>200</td>
+                <td>Serro</td>
+                <td>Sim</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Não está convencido?</h3>
+          <h4>Assita ao vídeo</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bXmHWDLoeJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+  <hr class="featurette-divider">
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Voltar para o topo</a></p>
+    <p>&copy;<a href="https://instagram.com/oliveira_photographer?igshid=ZDdkNTZiNTM=">@oliveiraronald0</a> , Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

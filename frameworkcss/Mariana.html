@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Mariana</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Carrossel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://instagram.com/oliveira_photographer?igshid=ZDdkNTZiNTM=">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Desativado</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagem/Turismo-em-Minas-Gerais-melhor-epoca1400px.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Bem Vindo a Minas Gerais.</h1>
+            <p>Conheça e se encante!</p>
+            <p><a class="btn btn-lg btn-primary" href="Cadastro.html">Inscreva-se hoje</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/IMG_8879a-e1482170408169tttt2042x931.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Cidades históricas</h1>
+            <p>Conheça e se encante!</p>
+            <p><a class="btn btn-lg btn-primary" href="https://youtu.be/_eDLHvQoL-8">Veja</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagem/DEST_Tiradentes_GettyImages-963500142_1440X572.jpg" alt="">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Aprecie.</h1>
+            <p>Conheça e se encante!</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.vortexmag.net/pt-br/as-10-cidades-mais-bonitas-de-minas-gerais/">mais roteiros</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container marketing">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="imagem/diamantina140x140.jpg" alt="">
+        <h2 class="fw-normal">Diamantina</h2>
+        <p>Clique e conheça um pouco mais sobre a cidade histórica de Diamantina.</p>
+        <p><a class="btn btn-secondary" href="Diamantina.html">Explore &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="imagem/praca-minas-gerais140x140.jpg" alt="">
+        <h2 class="fw-normal">Mariana</h2>
+        <p>Clique e conheça um pouco mais sobre a cidade histórica de Mariana.</p>
+        <p><a class="btn btn-secondary" href="Mariana.html">Explore &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="imagem/Praça-Tiradentes-140x140OuroP.jpg" alt="">
+        <h2 class="fw-normal">Ouro Preto</h2>
+        <p>Clique e conheça um pouco mais sobre a cidade histórica de Ouro Preto.</p>
+        <p><a class="btn btn-secondary" href="OuroPreto.html">Explore &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+
+    <h1>Mariana MG</h1>
+    <div class="col-md-5">
+        <img src="imagem/mariana474x316.webp" class="img-fluid" alt="...">
+    </div>
+    <p>Primeira vila, primeira capital, sede do primeiro bispado e primeira cidade a ser projetada em Minas Gerais. A história de Mariana, que tem como cenário um período de descobertas, religiosidade, projeção artística e busca pelo ouro, é marcada também pelo pioneirismo de uma região que há três séculos guarda riquezas que nos remetem ao tempo do Brasil Colônia.</p>
+        
+        <p>Bandeirantes paulistas chefiados pelo coronel Salvador Fernandes Furtado acamparam, em 16 de julho de 1696, na margem de um pequeno rio onde o ouro aflorava abundante e a que foi dado o nome de Ribeirão do Carmo. Às suas margens nasceu o arraial de Nossa Senhora do Carmo. O local se transformou em um dos principais fornecedores deste minério para Portugal e, pouco tempo depois, tornou-se a primeira vila criada na então Capitania de São Paulo e Minas de Ouro. Lá foi estabelecida também a primeira capital.</p>
+        
+        <p>Em homenagem à rainha Maria Ana D’Austria, esposa do rei lusitano D. João V, em 1745, a região foi elevada à cidade e nomeada Mariana. Transformando-se no centro religioso do Estado, nesta mesma época a cidade passou a ser sede do primeiro bispado mineiro. Para isso, foi enviado, do Maranhão, o bispo D. Frei Manoel da Cruz. Sua trajetória realizada por terra durou um ano e dois meses e foi considerada um feito bastante representativo no Brasil Colônia. Um projeto urbanístico se fez necessário, sendo elaborado pelo engenheiro militar José Fernandes Pinto de Alpoim. Ruas em linha reta e praças retangulares são características da primeira cidade planejada de Minas e uma das primeiras do Brasil.</p>
+        
+        <p>Além de guardar relíquias e casarios coloniais que contam parte da história do país, em Mariana nasceram personagens representativos da cultura brasileira. Entre eles estão o poeta e inconfidente Cláudio Manuel da Costa, o pintor sacro Manuel da Costa Ataíde e Frei Santa Rita Durão, autor do poema “Caramuru”.</p>
+        
+        <p>Andar por suas ruas, é um convite para descobrir o discreto charme desta cidade setecentista através de seus casarões. Tudo isso faz da “primeira de Minas” um dos municípios mais importantes do Circuito do Ouro e parte integrante da Trilha dos Inconfidentes e do Circuito Estrada Real. Uma cidade tombada em 1945 como Monumento Nacional e repleta de riquezas do período em que começou a ser traçada a história de Minas Gerais.</p>
+        
+        <h2>Rompimento de barragem</h2>
+       
+        <p>Em 2015, Bento Rodrigues, um subdistrito de Santa Rita Durão, que é um dos distritos de Mariana, foi destruído após o rompimento de uma barragem administrada pela empresa Samarco. A onda de detritos de mineração atingiu 18,20 m de altura e matou 20 pessoas. A lama também contaminou o rio Doce.</p>
+        <h2>Turismo</h2>
+        
+        <p>A cidade possui um enorme patrimônio arquitetônico do barroco produzido durante o Brasil Colonial. Além disso, o turismo ecológico teve também uma expansão importante, contribuindo de forma significativa para o desenvolvimento do setor de serviços e transformando Mariana em uma das cidades mineiras com o maior número de praticantes dos chamados esportes radicais, como montanhismo e mountain bike.</p>
+        
+        <p>Mariana recebe boa parte do fluxo de turistas de Ouro Preto, devido à pequena distância de 12 km. Essa integração se ampliou com a criação do Trem da Vale, fruto da parceria entre a Vale do Rio Doce e as Prefeituras Municipais de Mariana e Ouro Preto. Após décadas parado, o trem turístico voltou a funcionar em abril de 2006, com viagens diárias. A Estação Ferroviária de Mariana foi totalmente revitalizada e é um ponto turístico da cidade, além de possuir uma biblioteca, um play-ground temático e um centro de mídia para a população.</p>
+  </div><!-- /.container -->
+  <hr class="featurette-divider">
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Voltar para o topo</a></p>
+    <p>&copy;<a href="https://instagram.com/oliveira_photographer?igshid=ZDdkNTZiNTM=">@oliveiraronald0</a> , Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
